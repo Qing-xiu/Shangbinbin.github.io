@@ -1,0 +1,17 @@
+$color_primary: #ff9359;
+
+@define-mixin font-dpr $size {
+  [data-dpr="1"] & {
+    font-size: $size / 2
+  }
+  [data-dpr="2"] & {
+    font-size: $size;
+  }
+  [data-dpr="3"] & {
+    font-size: $size * 1.5;
+  }
+}
+
+@define-mixin text-overflow {
+	
+}
